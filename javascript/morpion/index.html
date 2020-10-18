@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>morpion</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <h1 class="titreColor">Le Morpion du week-end</h1>
+
+    <div class="morpion">
+        <div class="ligne">
+            <div id="A1" class="carre" data-x="1"></div>
+            <div id="A2" class="carre" data-x="1-2"></div>
+            <div id="A3" class="carre" data-x="1-3"></div>
+        </div>
+        <div class="ligne">
+            <div id="B1" class="carre"></div>
+            <div id="B2" class="carre"></div>
+            <div id="B3" class="carre"></div>
+        </div>
+        <div class="ligne">
+            <div id="C1" class="carre"></div>
+            <div id="C2" class="carre"></div>
+            <div id="C3" class="carre"></div>
+        </div>
+    </div>
+
+
+
+    <div id="myModal" class="modal">
+        <div class="cardModal">modalContent
+            <div class="modalContent">
+                <div class="cardHeader">
+                    <h2>Fin de la partie !</h2>
+                </div>
+                <div class="cardBody">
+                    <p id="phraseWinner"></p>
+                </div>
+                <div class="cardFooter">
+                    <button id='replayGame' class="buttonReplay">Rejouer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>    
+</body>
+</html>
