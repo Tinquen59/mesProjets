@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compteur</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    
+    <div class="manual-compteur">
+        <button id="decreaseCounter" class="btn btn--red">-</button>
+
+        <div class="manual-compteur__number">
+            <span id="counter"></span>
+        </div>
+        
+        <button id="increaseCounter" class="btn btn--blue">+</button>
+    </div>
+
+    <div class="stopwatch">
+        <div class="stopwatch__number">
+            <span id="stopwatch">00:00</span>
+        </div>
+
+        <div class="stopwatch__switch">
+            <button id="reset" class="btn btn--reset">Reset</button>
+
+            <button id="stop" class="btn btn--stop">Stop</button>
+
+            <button id="start" class="btn btn--start">Start</button>
+        </div>
+    </div>
+
+
+    <script src="./javascript/app.js"></script>
+</body>
+</html>

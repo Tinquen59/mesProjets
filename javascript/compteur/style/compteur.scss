@@ -1,0 +1,110 @@
+$color-bgc: #303952;
+$color-option: #fff;
+$color-primary: #34ace0;
+$color-secondary: #ff5252;
+
+@mixin counter ($marginY: auto, $marginX: auto) {
+  position: relative;
+  margin: $marginY $marginX;
+  text-align: center;
+  padding: auto;
+  width: 100px;
+  height: 100px;
+  border: 3px solid $color-option;
+  border-radius: 50%;
+  color: #33d9b2;
+  font-weight: 700;
+  font-size: 1.5rem;
+  display: flex;
+}
+
+@mixin style-btn ($width, $size) {
+  border: none;
+  background-color: $color-bgc;
+  color: $color-option;
+  font-size: $size;
+  cursor: pointer;
+  width: $width;
+  height: 40px;
+  margin: auto 0;
+  outline: none;
+}
+
+@mixin color-btn ($color) {
+  background-color: $color;
+  border: 1px solid $color;
+  border-radius: 20px;
+}
+
+html,
+body {
+  background-color: $color-bgc;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.manual-compteur {
+  width: auto;
+  display: flex;
+
+  &__number {
+    @include counter(auto, 15px);
+
+    & span {
+      margin: auto;
+    }
+  }
+
+  & .btn {
+    @include style-btn(70px, 2rem);
+
+    &--red {
+        @include color-btn($color-secondary)
+    }
+    &--blue {
+        @include color-btn($color-primary)
+    }
+  }
+}
+
+
+// ---------------------------------
+
+
+.stopwatch {
+  margin-top: 90px;
+
+  &__number {
+    @include counter();
+
+    & span {
+      margin: auto;
+    }
+  }
+
+  &__switch {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+
+    & .btn {
+      @include style-btn(90px, 1.5rem);
+
+      &--reset {
+        @include color-btn(#ff793f);
+        display: none;
+      }
+
+      &--stop {
+        @include color-btn($color-secondary);
+      }
+      &--start {
+        @include color-btn($color-primary);
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+html,
+body {
+  background-color: #303952;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.manual-compteur {
+  width: auto;
+  display: flex;
+}
+.manual-compteur__number {
+  position: relative;
+  margin: auto 15px;
+  text-align: center;
+  padding: auto;
+  width: 100px;
+  height: 100px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  color: #33d9b2;
+  font-weight: 700;
+  font-size: 1.5rem;
+  display: flex;
+}
+.manual-compteur__number span {
+  margin: auto;
+}
+.manual-compteur .btn {
+  border: none;
+  background-color: #303952;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  width: 70px;
+  height: 40px;
+  margin: auto 0;
+  outline: none;
+}
+.manual-compteur .btn--red {
+  background-color: #ff5252;
+  border: 1px solid #ff5252;
+  border-radius: 20px;
+}
+.manual-compteur .btn--blue {
+  background-color: #34ace0;
+  border: 1px solid #34ace0;
+  border-radius: 20px;
+}
+
+.stopwatch {
+  margin-top: 90px;
+}
+.stopwatch__number {
+  position: relative;
+  margin: auto auto;
+  text-align: center;
+  padding: auto;
+  width: 100px;
+  height: 100px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  color: #33d9b2;
+  font-weight: 700;
+  font-size: 1.5rem;
+  display: flex;
+}
+.stopwatch__number span {
+  margin: auto;
+}
+.stopwatch__switch {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+}
+.stopwatch__switch .btn {
+  border: none;
+  background-color: #303952;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  width: 90px;
+  height: 40px;
+  margin: auto 0;
+  outline: none;
+}
+.stopwatch__switch .btn--reset {
+  background-color: #ff793f;
+  border: 1px solid #ff793f;
+  border-radius: 20px;
+  display: none;
+}
+.stopwatch__switch .btn--stop {
+  background-color: #ff5252;
+  border: 1px solid #ff5252;
+  border-radius: 20px;
+}
+.stopwatch__switch .btn--start {
+  background-color: #34ace0;
+  border: 1px solid #34ace0;
+  border-radius: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
